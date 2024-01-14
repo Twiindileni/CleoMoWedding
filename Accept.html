@@ -15,12 +15,6 @@
       justify-content: center;
       height: 100vh;
     }
-    
-    h1 {
-        stroke: #088337;
-        stroke-width: 100%;
-        width: 10px;
-    }
 
     #content-box {
       background-color: rgba(255, 255, 255, 0.8);
@@ -29,14 +23,27 @@
       text-align: center;
     }
 
-    #whatsapp-button {
-      background-color: #088337; /* WhatsApp green color */
+    #whatsapp-button, #view-card-button {
+      background-color: #c70939; /* WhatsApp green color */
       color: #fff;
       padding: 10px 20px;
       border: none;
       border-radius: 5px;
       cursor: pointer;
       font-size: 16px;
+      margin-right: 10px;
+    }
+
+    #contribution-table {
+      width: 100%;
+      margin-top: 20px;
+      border-collapse: collapse;
+    }
+
+    #contribution-table th, #contribution-table td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
     }
   </style>
   <script>
@@ -44,10 +51,12 @@
       // Replace 'your_whatsapp_number' with your actual WhatsApp number
       window.location.href = 'https://chat.whatsapp.com/IiTsAzAJE3BA1YMxUqoJoc';
     }
+
+    function redirectToWeddingCard() {
+      // Replace 'your_wedding_card.pdf' with the actual path to your wedding card PDF
+      window.location.href = 'Cleo & Monika Wedding invitation_compressed (1).pdf';
+    }
   </script>
-</head>
-<h1> Will you be my Groomsman</h1>
-<head>
 </head>
 <body>
   <div id="content-box">
@@ -63,7 +72,30 @@
         Best Regards,
         
         Cleo</p>
+
     <button id="whatsapp-button" onclick="redirectToWhatsApp()">Accept</button>
+    <button id="view-card-button" onclick="redirectToWeddingCard()">View Card</button>
+
+    <table id="contribution-table">
+      <thead>
+        <tr>
+          <th>Contribution</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2000</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p style="margin-top: 20px;"><strong>Things included in the contribution:</strong></p>
+    <ul>
+      <li>Suit</li>
+      <li>Nigerian attire</li>
+      <li>Hat</li>
+      <!-- Add more items as needed -->
+    </ul>
   </div>
 </body>
 </html>
