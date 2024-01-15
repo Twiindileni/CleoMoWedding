@@ -1,101 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      background-image: url('Cleo & Monika Web.jpg'); /* Replace 'background.jpg' with your actual image file */
-      background-size: cover;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cleo & Monika Wedding Invitation</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-image: url('Cleo & Monika Web.jpg');
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
-    #content-box {
-      background-color: rgba(255, 255, 255, 0.8);
-      padding: 20px;
-      border-radius: 10px;
-      text-align: center;
-    }
+        #content-box {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
 
-    #whatsapp-button, #view-card-button {
-      background-color: #c70939; /* WhatsApp green color */
-      color: #fff;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      font-size: 16px;
-      margin-right: 10px;
-    }
+        #content-box p {
+            line-height: 1.6;
+            color: #333;
+        }
 
-    #contribution-table {
-      width: 100%;
-      margin-top: 20px;
-      border-collapse: collapse;
-    }
+        #whatsapp-button, #view-card-button {
+            background-color: #0991c7;
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 18px;
+            margin: 10px;
+            transition: background-color 0.3s;
+        }
 
-    #contribution-table th, #contribution-table td {
-      border: 1px solid #ddd;
-      padding: 10px;
-      text-align: center;
-    }
-  </style>
-  <script>
-    function redirectToWhatsApp() {
-      // Replace 'your_whatsapp_number' with your actual WhatsApp number
-      window.location.href = 'https://chat.whatsapp.com/IiTsAzAJE3BA1YMxUqoJoc';
-    }
+        #whatsapp-button:hover, #view-card-button:hover {
+            background-color: #07739a;
+        }
 
-    function redirectToWeddingCard() {
-      // Replace 'your_wedding_card.pdf' with the actual path to your wedding card PDF
-      window.location.href = 'Cleo & Monika Wedding invitation_compressed (1).pdf';
-    }
-  </script>
+        #contribution-table {
+            width: 100%;
+            margin-top: 30px;
+            border-collapse: collapse;
+        }
+
+        #contribution-table th, #contribution-table td {
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: center;
+        }
+
+        #contribution-table th {
+            background-color: #000000;
+            color: #fff;
+        }
+
+        #included-items-list {
+            margin-top: 20px;
+            list-style: none;
+            padding: 0;
+        }
+
+        #included-items-list li {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+    </style>
+    <script>
+        function redirectToWhatsApp() {
+            window.location.href = 'https://chat.whatsapp.com/IiTsAzAJE3BA1YMxUqoJoc';
+        }
+
+        function redirectToWeddingCard() {
+            window.location.href = 'Cleo & Monika Wedding invitation_compressed (1).pdf';
+        }
+    </script>
 </head>
 <body>
-  <div id="content-box">
-    <p>Dear Friends,
+    <div id="content-box">
+        <h1>Cleo & Monika Wedding Invitation</h1>
+        <p>Dear Friends,</p>
+        <p>I hope this message finds you well. As the excitement for our big day continues to grow, I find myself reflecting on the meaningful relationships that have shaped my life. It is with great joy and honor that I extend to you a special invitation to stand by my side as a groomsman at our wedding.</p>
+        <p>Your friendship has been a source of strength, laughter, and support throughout the years, and I cannot imagine celebrating this milestone without you. Your presence will add a unique and cherished element to our wedding festivities.</p>
+        <p>The date is set for 23 August 2023, and I would be honored if you would accept this role as one of my groomsmen. Your willingness to share in this momentous occasion would mean the world to me.</p>
+        <p>I understand the responsibilities that come with being a groomsman, and I want you to know that your presence is the most important thing. Your support and friendship are what truly matter to me.</p>
+        <p>If you're able and willing to be a part of our wedding party, please let me know at your earliest convenience. I am looking forward to creating beautiful memories together and celebrating this special day with you.</p>
+        <p>Thank you for considering this request, and I hope we can share in the joy of this significant event.</p>
+        <p>Best Regards, Cleo</p>
 
-        I hope this message finds you well. As the excitement for our big day continues to grow, I find myself reflecting on the meaningful relationships that have shaped my life. It is with great joy and honor that I extend to you a special invitation to stand by my side as a groomsman at our wedding.
-        Your friendship has been a source of strength, laughter, and support throughout the years, and I cannot imagine celebrating this milestone without you. Your presence will add a unique and cherished element to our wedding festivities.
-        The date is set for 23 August 2023, and I would be honored if you would accept this role as one of my groomsmen. Your willingness to share in this momentous occasion would mean the world to me.
-        I understand the responsibilities that come with being a groomsman, and I want you to know that your presence is the most important thing. Your support and friendship are what truly matter to me.
-        If you're able and willing to be a part of our wedding party, please let me know at your earliest convenience. I am looking forward to creating beautiful memories together and celebrating this special day with you.
-        Thank you for considering this request, and I hope we can share in the joy of this significant event.
-        
-        Best Regards,
-        
-        Cleo</p>
+        <button id="whatsapp-button" onclick="redirectToWhatsApp()">Accept</button>
+        <button id="view-card-button" onclick="redirectToWeddingCard()">View Card</button>
 
-    <button id="whatsapp-button" onclick="redirectToWhatsApp()">Accept</button>
-    <button id="view-card-button" onclick="redirectToWeddingCard()">View Card</button>
+        <table id="contribution-table">
+            <thead>
+                <tr>
+                    <th>Contribution</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>N$2000.00</td>
+                </tr>
+            </tbody>
+        </table>
 
-    <table id="contribution-table">
-      <thead>
-        <tr>
-          <th>Contribution</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>N$2000.00</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <p style="margin-top: 20px;"><strong>Things included in the contribution:</strong></p>
-    <ul>
-      <li>Suit</li>
-      <li>Nigerian attire</li>
-      <li>Hat</li>
-      <!-- Add more items as needed -->
-    </ul>
-  </div>
+        <p><strong>Things included in the contribution:</strong></p>
+        <ul id="included-items-list">
+            <li>Suit</li>
+            <li>Nigerian attire</li>
+            <li>Hat</li>
+            <!-- Add more items as needed -->
+        </ul>
+    </div>
 </body>
 </html>
