@@ -45,6 +45,71 @@
       padding: 10px;
       text-align: center;
     }
+
+    * {
+  box-sizing: border-box;
+}
+
+/* Create three columns of equal width */
+.columns {
+  float: left;
+  width: 33.3%;
+  padding: 8px;
+}
+
+/* Style the list */
+.price {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/* Add shadows on hover */
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+/* Pricing header */
+.price .header {
+  background-color: #111;
+  color: white;
+  font-size: 25px;
+}
+
+/* List items */
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Grey list item */
+.price .grey {
+  background-color: #eee;
+  font-size: 20px;
+}
+
+/* The "Sign Up" button */
+.button {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Change the width of the three columns to 100%
+(to stack horizontally on small screens) */
+@media only screen and (max-width: 600px) {
+  .columns {
+    width: 100%;
+  }
+}
   </style>
   <script>
     function redirectToWhatsApp() {
@@ -76,27 +141,16 @@
     <button id="whatsapp-button" onclick="redirectToWhatsApp()">Accept</button>
     <button id="view-card-button" onclick="redirectToWeddingCard()">View Card</button>
 
-    <table id="contribution-table">
-      <thead>
-        <tr>
-          <th>Contribution</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>N$2500.00</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <p style="margin-top: 20px;"><strong>Things included in the contribution:</strong></p>
-    <ul>
-      <li>Suit</li>
-      <li>White Shirt</li>
-      <li>Tie</li>
-      <li>Day 2 Shirt</li>
-      <!-- Add more items as needed -->
-    </ul>
-  </div>
+    <div class="columns">
+        <ul class="price">
+          <li class="header">Contribution</li>
+          <li class="grey">N$ 2200.00</li>
+          <li>Included</li>
+          <li>Suit</li>
+          <li>Tie</li>
+          <li>Second Day Shirt</li>
+          <li class="grey"><a href="#" class="button">Due Date 30 May 2024</a></li>
+        </ul>
+      </div>
 </body>
 </html>
