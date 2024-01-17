@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="suits.css">
+  <title>Suit Selection</title>
+</head>
+<body>
+  <div id="background"></div>
+  
+  <div id="content-box">
+    <h1>Suit Selection</h1>
+    
+    <form id="suit-form">
+      <div class="suit-box">
+        <div class="suit">
+          <img src="suit3.png" alt="Suit 1">
+        </div>
+        <button type="button" class="select-button" onclick="selectSuit(1)">Select</button>
+      </div>
+      
+      <div class="suit-box">
+        <div class="suit">
+          <img src="suit4.png" alt="Suit 2">
+        </div>
+        <button type="button" class="select-button" onclick="selectSuit(2)">Select</button>
+      </div>
+
+      <div class="suit-box">
+        <div class="suit">
+          <img src="suit2.png" alt="Suit 2">
+        </div>
+        <button type="button" class="select-button" onclick="selectSuit(3)">Select</button>
+      </div>
+
+      <div class="suit-box">
+        <div class="suit">
+          <img src="Suit1.png" alt="Suit 2">
+        </div>
+        <button type="button" class="select-button" onclick="selectSuit(4)">Select</button>
+      </div>
+      
+      
+      
+      <!-- Add more suits as needed -->
+    </form>
+    
+    <div id="selection-score">
+      <h2>Your Selection Score:</h2>
+      <p id="score">0</p>
+    </div>
+  </div>
+
+  <script src="suit.js"></script>
+</body>
+</html>

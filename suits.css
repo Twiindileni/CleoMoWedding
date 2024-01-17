@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden; /* Hide the overflow to prevent the background from scrolling */
+  }
+  
+  #background {
+    background-image: url('Cleo\ &\ Monika\ Web.jpg'); /* Replace 'background.jpg' with your actual image file */
+    background-size: cover;
+    background-position: center;
+    filter: blur(1px); /* Apply a blur effect to the background */
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: -1;
+  }
+  
+  #content-box {
+    position: relative;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  #suit-form {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .suit-box {
+    border: 2px solid #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+  
+  .suit img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .select-button {
+    background-color: #0991c7;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #selection-score {
+    margin-top: 20px;
+  }
+  
+  #selection-score h2 {
+    margin-bottom: 10px;
+  }
+  
+  #score {
+    font-size: 24px;
+    font-weight: bold;
+    color: #04AA6D;
+  }
+  
