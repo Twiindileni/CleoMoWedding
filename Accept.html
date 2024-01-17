@@ -23,7 +23,7 @@
       text-align: center;
     }
 
-    #whatsapp-button, #view-card-button {
+    #whatsapp-button, #view-card-button, #view-suit-button, #view-shirt-button {
       background-color: #0991c7; /* WhatsApp green color */
       color: #fff;
       padding: 10px 20px;
@@ -56,17 +56,34 @@
       // Replace 'your_wedding_card.pdf' with the actual path to your wedding card PDF
       window.location.href = 'Cleo & Monika Wedding invitation_compressed (1).pdf';
     }
+
+    function viewSuit() {
+      // Replace 'your_suit_page.html' with the actual path to the page displaying suits
+      window.location.href = 'suits.html';
+    }
+
+    function viewDay2Shirt() {
+      // Replace 'your_shirt_page.html' with the actual path to the page displaying Day 2 shirts
+      window.location.href = 'your_shirt_page.html';
+    }
   </script>
 </head>
 <body>
   <div id="content-box">
     <p>Dear Friend,
 
+        Dear Friend,
+
         I hope this message finds you well. As the excitement for our big day continues to grow, I find myself reflecting on the meaningful relationships that have shaped my life. It is with great joy and honor that I extend to you a special invitation to stand by my side as a groomsman at our wedding.
+        
         Your friendship has been a source of strength, laughter, and support throughout the years, and I cannot imagine celebrating this milestone without you. Your presence will add a unique and cherished element to our wedding festivities.
-        The date is set for 23 August 2023, and I would be honored if you would accept this role as one of my groomsmen. Your willingness to share in this momentous occasion would mean the world to me.
+        
+        The date is set for 23 August 2024, and I would be honored if you would accept this role as one of my groomsmen. Your willingness to share in this momentous occasion would mean the world to me.
+        
         I understand the responsibilities that come with being a groomsman, and I want you to know that your presence is the most important thing. Your support and friendship are what truly matter to me.
+        
         If you're able and willing to be a part of our wedding party, please let me know at your earliest convenience. I am looking forward to creating beautiful memories together and celebrating this special day with you.
+        
         Thank you for considering this request, and I hope we can share in the joy of this significant event.
         
         Best Regards,
@@ -75,6 +92,8 @@
 
     <button id="whatsapp-button" onclick="redirectToWhatsApp()">Accept</button>
     <button id="view-card-button" onclick="redirectToWeddingCard()">View Card</button>
+    <button id="view-suit-button" onclick="viewSuit()">View Suit</button>
+    <button id="view-shirt-button" onclick="viewDay2Shirt()">View Day 2 Shirt</button>
 
     <table id="contribution-table">
       <thead>
